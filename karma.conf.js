@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Tue Jan 02 2018 19:35:47 GMT-0800 (PST)
+// Generated on Wed Jan 03 2018 11:00:48 GMT-0800 (PST)
 
 module.exports = function(config) {
   config.set({
@@ -10,13 +10,14 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jquery-3.2.1', 'jasmine', 'browserify'],
+    frameworks: ['jasmine', 'jquery-3.2.1', 'browserify', 'jasmine-matchers'],
 
 
     // list of files / patterns to load in the browser
     files: [
       'js/*.js',
       'spec/*-spec.js',
+
     ],
 
 
@@ -31,13 +32,15 @@ module.exports = function(config) {
       'js/*.js': [ 'browserify'],
       'spec/*.js': ['browserify'],
     },
+
     plugins: [
-    'karma-jquery',
-    'karma-browserify',
-    'karma-jasmine',
-    'karma-chrome-launcher',
-    'karma-jasmine-html-reporter'
-  ],
+      'karma-jquery',
+      'karma-browserify',
+      'karma-jasmine',
+      'karma-jasmine-matchers',
+      'karma-chrome-launcher',
+      'karma-jasmine-html-reporter'
+    ],
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

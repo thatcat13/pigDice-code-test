@@ -1,8 +1,9 @@
-function Player(name, total, round){
+function Player(name, total, round) {
     this.name = name;
-    this.total = 0;
+    this.total = 100;
     this.round = 0;
-  };
+};
+
 
 
   Player.prototype.diceRoll = function(){

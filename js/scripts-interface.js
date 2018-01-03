@@ -6,7 +6,6 @@ var newPlayer2 = new Player();
 $(document).ready(function(){
   $('#p1-roll').click(function(event){
     event.preventDefault();
-    console.log('roll button clicked!');
     var nameInput = $('#p1name').val();
     var result = newPlayer.diceRoll();
     newPlayer.name = nameInput;
@@ -26,7 +25,6 @@ $(document).ready(function(){
 
   $('#p1-hold').click(function(event){
     event.preventDefault();
-    console.log('hold button clicked!');
     var total = newPlayer.total += newPlayer.round;
     $("#p1total").text(total);
 
