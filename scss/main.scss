@@ -1,0 +1,96 @@
+body{
+  margin: 15px;
+  background-image: url("./../../img/pattern.jpg");
+  background-size: cover;
+  color: #7E5C42;
+}
+
+ body, a:hover, button:hover{
+   cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat330.cur), progress !important;
+ }
+
+button:hover{
+   cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo58.cur), progress !important;
+ }
+
+ input[type="text"], textarea {
+  background-color : #FFE1EA;
+}
+
+
+#jumbo{
+  background: linear-gradient(to right, #e87a99 , #f9c5c5);
+  border-radius: 25px;
+}
+
+.card{
+  margin: 20px;
+  border: 5px;
+  border-style: solid;
+  border-color: #f9c5c5;
+  border-radius: 15px;
+}
+
+h4 {
+  margin-left: 90px;
+}
+
+button {
+  background-color: #e87a99;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#result {
+  text-align: center;
+  font-size: 50px;
+}
+
+.jumbotron {
+  background-color: #f9c5c5;
+  position: relative;
+  border-radius: 25px;
+}
+
+.card-body {
+  background-color: #f9c5c5;
+}
+
+#confetti {
+  display: none;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+#pig{
+  width: 200px;
+  position: absolute;
+  right: -10px;
+  z-index: 2;
+}
+
+#bub{
+  width: 200px;
+  position: absolute;
+  right: 110px;
+  z-index: 3;
+  top: 100px;
+}
+
+div .bubble{
+  width: 183px;
+  position: absolute;
+  height: 84px;
+  right: 115px;
+  bottom: 67px;
+  z-index: 4;
+  padding: 10px;
+}
